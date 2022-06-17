@@ -3,7 +3,15 @@ import styles from './Navigation.module.css';
 
 export const Navigation = () => (
   <nav>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/movies">Movies</NavLink>
+    <NavLink to="/" className={styles.link} activeClassName={styles.activeLink}>
+      Home
+    </NavLink>
+    <NavLink
+      to="/movies"
+      className={styles.link}
+      activeClassName={styles.activeLink}
+    >
+      Movies
+    </NavLink>
   </nav>
 );

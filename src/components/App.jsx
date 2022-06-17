@@ -12,7 +12,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      React homework template
+      goit-react-hw-05-movies
     </div>
   );
 };
