@@ -1,3 +1,9 @@
+.nav {
+  text-align: center;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid gray;
+}
+
 .link {
   display: inline-block;
   text-decoration: none;
@@ -7,7 +13,20 @@
   font-size: 18px;
 }
 
+.link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link:hover {
+  color: #aa7171;
+}
+
 .activeLink {
-  composes: link;
   color: crimson;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.activeLink:not(:last-child) {
+  margin-right: 30px;
 }

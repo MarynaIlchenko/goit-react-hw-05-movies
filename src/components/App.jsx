@@ -12,7 +12,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      goit-react-hw-05-movies
+      <Route path="/"></Route>
     </div>
   );
 };
