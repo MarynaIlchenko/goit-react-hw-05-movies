@@ -24,7 +24,7 @@ export const App = () => {
         <HomePage />
       </Route>
       
-      <Route path="/movies">
+      <Route path="/movies/:id">
         <Route <Cast /> />
         <Route <Reviews /> />
       </Route>
