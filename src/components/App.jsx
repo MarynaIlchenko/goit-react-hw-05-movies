@@ -1,4 +1,11 @@
+import { Switch, Route } from 'react-router-dom';
 import { Navigation } from './Navigation';
+import Cast from './views/Cast';
+import HomePage from './views/HomePage';
+import MovieDetailsPage from './views/MovieDetailsPage';
+import MoviesPage from './views/MoviesPage';
+import Reviews from './views/Reviews';
+import NotFoundView from './views/NotFoundView/NotFoundView';
 
 export const App = () => {
   return (
@@ -12,7 +19,23 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Route path="/"></Route>
+      <Switch>
+      <Route path="/" exact>
+        <HomePage />
+      </Route>
+      
+      <Route path="/movies">
+        <Route <Cast /> />
+        <Route <Reviews /> />
+      </Route>
+     <Route path="/movies">
+      <MoviesPage />
+        <MovieDetailsPage />
+      </Route>
+      <Route>
+        <NotFoundView/>
+        </Route>
+        </Switch>
     </div>
   );
 };
