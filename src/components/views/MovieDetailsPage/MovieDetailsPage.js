@@ -13,7 +13,7 @@ export const MovieDetailsPage = () => {
   const { title, overview, release_date, genres, poster_path, vote_average } =
     movie;
   const posterImage = `https://image.tmdb.org/t/p/w500/${poster_path}`;
-  const normalisedStirng =
+  const normalisedString =
     vote_average && vote_average.toString().replace(/\D/g, '');
 
   useEffect(() => {
@@ -40,17 +40,16 @@ export const MovieDetailsPage = () => {
         {poster_path ? (
           <img src={poster_path && posterImage} alt="" width={300} />
         ) : (
-          <h2>Sorry photo not found.</h2>
+          <h2>Sorry, photo was not found.</h2>
         )}
         <div className={style.content}>
           <h2>
             {title} ({release_date})
           </h2>
-          <p>User score: {normalisedStirng}%</p>
+          <p>User score: {normalisedString}%</p>
 
           <h3>Overview</h3>
           <p>{overview}</p>
-
           <h3>Genres</h3>
           <ul>
             {genres && genres.map(({ name, id }) => <li key={id}>{name}</li>)}
@@ -60,7 +59,7 @@ export const MovieDetailsPage = () => {
 
       <hr />
 
-      <p className={style.text}>Aditional info</p>
+      <p className={style.text}>Additional info</p>
 
       <ul className={style.list}>
         <li className={style.listItem}>

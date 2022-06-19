@@ -5,12 +5,10 @@
 }
 
 .link {
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px;
-  font-weight: 500;
-  color: blue;
-  font-size: 18px;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px 0 10px 0;
 }
 
 .link:not(:last-child) {
@@ -18,13 +16,14 @@
 }
 
 .link:hover {
-  color: #aa7171;
+  color: #4b4769;
 }
 
 .activeLink {
-  color: crimson;
+  color: rgb(94, 47, 173);
   font-size: larger;
   font-weight: bold;
+  padding: 10px 0 10px 0;
 }
 
 .activeLink:not(:last-child) {
